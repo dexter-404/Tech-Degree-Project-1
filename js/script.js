@@ -14,7 +14,33 @@ project 1 - A Random Quote Generator
   Add the `year` property to at least one object in the array.
   Use console.log() to log your array of quotes to the console.
 ***/
-
+var quotes = [
+  { 
+    quote: 'Its not the load that breaks you down, its the way you carry it.',
+    source: 'www.goodreads.com',
+    citation: 'Lou Holtz'
+  },
+  { 
+    quote: 'Do you want to know who you are? Dont ask. Act! Action will delineate and define you.',
+    source: 'www.goodreads.com',
+    citation: 'Thomas Jefferson'
+  },
+  { 
+    quote: 'The best preparation for tomorrow is doing your best today.',
+    source: 'www.brainyquote.com',
+    citation: 'H. Jackson Brown, Jr'
+  },
+  { 
+    quote: 'It is during our darkest moments that we must focus to see the light.',
+    source: 'www.brainyquote.com',
+    citation: 'Aristotle'
+  },
+  { 
+    quote: 'Two things are infinite: the universe and human stupidity; and Im not sure about the universe.',
+    source: 'www.goodreads.com',
+    citation: 'Albert Einstein'
+  }
+]
 
 
 
