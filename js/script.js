@@ -49,7 +49,13 @@ var quotes = [
    - Create a variable to store a random number 
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
+function getRandomQuote() {
+  var i = Math.floor(Math.random() * quotes.length);
+  var randomQuote = quotes[i];
+  return randomQuote;
+}
 
+console.log(getRandomQuote());
 
 
 
