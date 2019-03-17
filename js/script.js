@@ -18,7 +18,8 @@ var quotes = [
   { 
     quote: 'Its not the load that breaks you down, its the way you carry it.',
     source: 'www.goodreads.com',
-    citation: 'Lou Holtz'
+    citation: 'Lou Holtz',
+    year: '1937'
   },
   { 
     quote: 'Do you want to know who you are? Dont ask. Act! Action will delineate and define you.',
@@ -42,8 +43,6 @@ var quotes = [
   }
 ]
 
-
-
 /***
   Create the `getRandomQuote` function to:
    - Create a variable to store a random number 
@@ -54,10 +53,6 @@ function getRandomQuote() {
   var randomQuote = quotes[i];
   return randomQuote;
 }
-
-console.log(getRandomQuote());
-
-
 
 /***
   Create the `printQuote` function to: 
@@ -72,7 +67,31 @@ console.log(getRandomQuote());
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
+function printQuote() {
 
+  var randomQuote = getRandomQuote();
+  var outputDiv = '';
+
+  //outputDiv = '<p class="quote">' + randomQuote.quote + '</p>'
+  //console.log(outputDiv);
+  
+  if (randomQuote.citation === true) {
+    outputDiv += '<span class="citation">' + randomQuote.citation + '</span>';
+    console.log(outputDiv);
+  } 
+  
+  
+  /*
+  if (quotes.year === true) {
+    outputDiv += '<span class="year">' + randomQuote.year + '</span>';
+  }
+  outputDiv += '</p>';
+  console.log(outputDiv);
+  */
+  
+}
+
+console.log(printQuote());
 
 
 /***
@@ -82,7 +101,7 @@ console.log(getRandomQuote());
   comment.
 ***/
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
