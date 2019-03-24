@@ -60,8 +60,8 @@ function printQuote() {
   var message = '';
   var outputDiv;
 
-  message = '<p class="quote">' + randomQuote.quote + '</p>';
-  message = '<p class="source">' + randomQuote.source;
+  message += '<p class="quote">' + randomQuote.quote + '</p>';
+  message += '<p class="source">' + randomQuote.source;
 
   console.log(randomQuote.quote);
   
