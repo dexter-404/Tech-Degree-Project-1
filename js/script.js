@@ -83,7 +83,7 @@ function printQuote() {
   randomBgColor();
 }
 
-var intervalID = window.setInterval(printQuote, 500);
+var intervalID = window.setInterval(printQuote, 20000);
 //document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 function randomBgColor() {
