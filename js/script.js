@@ -51,6 +51,15 @@ function getRandomQuote() {
   return randomQuote;
 }
 
+function randomBgColor() {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  
+  document.body.style.background = bgColor;
+}
+
 function printQuote() {
 
   var randomQuote = getRandomQuote();
@@ -79,20 +88,9 @@ function printQuote() {
   outputDiv = document.getElementById('quote-box');
   outputDiv.innerHTML = message;
   
- 
   randomBgColor();
 }
 
 var intervalID = window.setInterval(printQuote, 20000);
-//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-function randomBgColor() {
-  var x = Math.floor(Math.random() * 256);
-  var y = Math.floor(Math.random() * 256);
-  var z = Math.floor(Math.random() * 256);
-  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  
-  document.body.style.background = bgColor;
-  
-}
 
