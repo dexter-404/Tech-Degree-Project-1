@@ -71,7 +71,7 @@ function printQuote() {
   }
 
   if (randomQuote.category) {
-    message += '<span class="category">' + randomQuote.category + '</span>';
+    message +='<span class="category">' + randomQuote.category + '</span>';
   }
   
   message += '</p>';
