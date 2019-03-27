@@ -101,8 +101,8 @@ function printQuote() {
   randomBgColor();
 }
 
-/* Sets '20 seconds' as interval time for every autorefresh, meanwhile it calls 'printQuote()' function */
+/* Sets '2 seconds' as interval time for every autorefresh, meanwhile it calls 'printQuote()' function */
 
-var intervalID = window.setInterval(printQuote, 20000);
+var intervalID = window.setInterval(printQuote, 2000);
 
 
