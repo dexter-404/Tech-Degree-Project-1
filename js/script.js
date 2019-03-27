@@ -77,13 +77,13 @@ function printQuote() {
 
   outputDiv = document.getElementById('quote-box');
   outputDiv.innerHTML = message;
-
-  randomBgColor();
+  
+  window.setTimeout(randomBgColor(), 300);
+  //randomBgColor();
 }
 
+
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
 
 function randomBgColor() {
   var x = Math.floor(Math.random() * 256);
@@ -94,3 +94,4 @@ function randomBgColor() {
   document.body.style.background = bgColor;
   
 }
+
