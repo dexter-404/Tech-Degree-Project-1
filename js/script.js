@@ -55,7 +55,7 @@ function getRandomQuote() {
   return randomQuote;
 }
 
-/* Generating a random color and set the generated color as document background */
+/* Generating a random color and set the generated color as body & button background */
 
 function randomBgColor() {
   var x = Math.floor(Math.random() * 256);
