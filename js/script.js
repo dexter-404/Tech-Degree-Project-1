@@ -12,33 +12,41 @@ var quotes = [
     quote: 'Its not the load that breaks you down, its the way you carry it.',
     source: 'www.goodreads.com',
     citation: 'Lou Holtz',
-    year: 'Not 2019'
+    year: 'Not 2019',
+    category: 'Motivational',
+    tag: 'Life'
   },
   { 
     quote: 'Do you want to know who you are? Dont ask. Act! Action will delineate and define you.',
     source: 'www.goodreads.com',
     citation: 'Thomas Jefferson',
     year: 'Not 2019',
-    category: 'Inspirational'
+    category: 'Inspirational',
+    tag: 'Action'
   },
   { 
     quote: 'The best preparation for tomorrow is doing your best today.',
     source: 'www.brainyquote.com',
     citation: 'H. Jackson Brown, Jr',
-    year: 'Not 2019'
+    year: 'Not 2019',
+    category: 'Inspirational',
+    tag: 'Action'
   },
   { 
     quote: 'It is during our darkest moments that we must focus to see the light.',
     source: 'www.brainyquote.com',
     citation: 'Aristotle',
     year: 'Not 2019',
-    category: 'Inspirational'
+    category: 'Inspirational',
+    tag: 'Focus'
   },
   { 
     quote: 'Two things are infinite: the universe and human stupidity; and Im not sure about the universe.',
     source: 'www.goodreads.com',
     citation: 'Albert Einstein',
-    year: 'Not 2019'
+    year: 'Not 2019',
+    category: 'Funny',
+    tag: 'Human'
   }
 ]
 
@@ -94,6 +102,10 @@ function printQuote() {
     message +='<span class="category">' + randomQuote.category + '</span>';
   }
   
+  if (randomQuote.tag) {
+    message +='<span class="tag">' + randomQuote.tag + '</span>';
+  }
+
   message += '</p>';
 
   outputDiv = document.getElementById('quote-box');
@@ -102,9 +114,9 @@ function printQuote() {
   randomBgColor();
 }
 
-/* Sets '10 seconds' as interval time for every autorefresh, meanwhile it calls 'printQuote()' function */
+/* Sets '20 seconds' as interval time for every autorefresh, meanwhile it calls 'printQuote()' function */
 
-var intervalID = window.setInterval(printQuote, 10000);
+var intervalID = window.setInterval(printQuote, 20000);
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
