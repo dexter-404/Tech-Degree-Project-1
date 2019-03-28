@@ -64,6 +64,7 @@ function randomBgColor() {
   var bgColor = "rgb(" + x + "," + y + "," + z + ")";
   
   document.body.style.background = bgColor;
+  document.getElementById("loadQuote").style.backgroundColor = bgColor;
 }
 
 /* 
